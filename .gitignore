@@ -43,7 +43,7 @@ out/
 build/
 
 ### Gradle ###
-
+.gradle/
 
 ### NetBeans ###
 /nbproject/private/

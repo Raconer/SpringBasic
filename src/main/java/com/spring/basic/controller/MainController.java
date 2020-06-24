@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     @GetMapping("/")
-    public String main(){
+    public String home(){
         System.out.println("Connect Main Controller : /");
-        return "Greetings from Spring Boot!";
+        return "/WEB-INF/main.jsp";
     }
 }

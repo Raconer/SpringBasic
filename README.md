@@ -4,9 +4,22 @@ Spring Make Basic Setting
 * gradle 
     1. spring-boot-starter-web, 2.3.1.RELEASE
         * Spring MVC를 사용하는 RESTful 애플리케이션을 포함한 웹 구축을위한 스타터. Tomcat을 기본 내장 컨테이너로 사용  
-        *  @SpringBootApplication, @Controller, @GetMapping 등 프로젝트 구성 및 의존성을 자동화 한다.
+        * @SpringBootApplication, @Controller, @GetMapping 등 프로젝트 구성 및 의존성을 자동화 한다.
 
-
+    2. Tasks > application > bootrun 추가시
+        * build.gradle
+            * buildscript 
+                - Repository add 'mavenCentral()'
+                - dependencies add classpath 'spring-boot-gradle-plugin'
+            * apply plugin add 'org.springframework.boot'
+            
+    3. tomcat-embed-jasper
+        * Controller와 WEB-INF 의 View를 찾아서 불러온다.
+        
+    4. spring-boot-devtools
+        * 개발에 필요한 기능 제공한다.
+            * Live Reload : View 개발시 서버 재시작 없이 바로 적용이 된다.
+            * Cache disabled : 템플릿 관련 캐시를 모두 비활성화 한다. 
 
 * Other
     1. application.properties
