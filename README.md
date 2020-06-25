@@ -21,6 +21,24 @@ Spring Make Basic Setting
         * 개발에 필요한 기능 제공한다.
             * Live Reload : View 개발시 서버 재시작 없이 바로 적용이 된다.
             * Cache disabled : 템플릿 관련 캐시를 모두 비활성화 한다.
+            
+* Connect DB (Mysql)
+
+    1. gradle 
+        * spring-boot-starter-data-jpa : DB데이터를 JAVA의 POJO(Plain Old Java Object)로 인식을 하여 맵핑을 해주는 맵퍼 이다. @Entity 사용시 필요
+        * mysql-connector-java 
+        
+    2. application.properties Setting
+        * spring.jpa.hibernate.ddl-auto=update
+        * spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
+        * spring.datasource.username=springuser
+        * spring.datasource.password=ThePassword
+        
+    * [DB Connect]
+        * <https://spring.io/guides/gs/accessing-data-mysql/>
+        
+    * [JPA]
+        * <https://velog.io/@adam2/JPA%EB%8A%94-%EB%8F%84%EB%8D%B0%EC%B2%B4-%EB%AD%98%EA%B9%8C-orm-%EC%98%81%EC%86%8D%EC%84%B1-hibernate-spring-data-jpa>
 
 * Other
     1. application.properties
