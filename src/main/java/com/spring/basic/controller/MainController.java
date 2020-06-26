@@ -13,7 +13,7 @@ public class MainController {
     @GetMapping("/")
     public String home(){
         System.out.println("Connect Main Controller : /");
-        return "/WEB-INF/main.jsp";
+        return "main";
     }
 
 }
