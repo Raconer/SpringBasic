@@ -29,7 +29,12 @@ dependencies {
     // Dev Tool ( Ex. Live Reload View )
     compile("org.springframework.boot:spring-boot-devtools:${springBootVersion}")
     // DataBase
-    compile("mysql:mysql-connector-java:5.1.13")
+
+    /**
+     * Gradle 버전 설정 오류로 DB연결 및 에러(자바)
+     */
+    compile("mysql:mysql-connector-java:8.0.20")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3")
     /**
     *    compile("mysql:mysql-connector-java:5.1.13")
     *    compile ('org.mybatis:mybatis:3.5.5') // xml Notice 사용시 필요
